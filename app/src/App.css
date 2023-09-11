@@ -2,11 +2,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background: url(./assets/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .App {
-  background-color: #282c34;
-  background-image: url(./assets/background.jpg);
-  height: 100vh;
-  width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -21,20 +25,42 @@
 
 .aboutContainer {
   width: 65vw;
-  height: 65vh;
   margin-top: 5vh;
+}
+
+.aboutMobile {
+  width: 95vw;
+  margin-top: 5vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutLeftSection {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
 }
 
 .profilePictureSection {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
-  height: 60%;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pictureMobile {
+  height: auto;
+  margin-top: 5vh;
 }
 
 .profilePicture {
   height: 250px;
+  background-color: rgb(142, 201, 201);
+  border: 2px solid rgb(142, 201, 201);
+  border-radius: 50%;
 }
 
 .infoSection {
@@ -49,13 +75,25 @@
 
 .linkSection {
   display: flex;
-  margin-top: 50px;
   width: 65vw;
   justify-content: space-between;
 }
 
+.linkSectionMobile {
+  flex-direction: column;
+  align-items: center;
+}
+
 .linkContainer {
+  align-items: center;
+  justify-content: center;
   height: 170px;
   width: 170px;
   padding: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.icon {
+  width: 105px;
 }
